@@ -8,21 +8,20 @@
 </head>
 <body>
     <h1>Sistema de Nacionalidade</h1>
-    Sua nacionalidade: <input type="text" name="txtnac" id="txtnac">
+    Sua nacionalidade: <input type="text" name="txtnac" id="txtnac"> 
     <input type="button" value="Verificar" onclick="mostrar()"> 
     <div id="res"></div>
     <script>
         function mostrar() {
-            var txtna = window.document.getElementById("txtna"); 
-            var res = window.document.getElementById("res");
-            var nac_ = String(txt.value); 
-            var pais = Brasil; 
-            res.innerHTML = `<p>Vivendo é <strong>${nac_}</strong></p>`
-            if (nac_ != pais) {
-                res.innerHTML += `Então você é estrangeiro! `
-            } else if(nac_ = pais){
-                res.innerHTML += `Então você é brasileiro!`
-            }
+            var txtnac_ = window.document.querySelector('input#txtnac'); 
+            var res = window.document.querySelector('div#res'); 
+            var nac = String(txtnac_.value);  
+            res.innerHTML += `Seu país é ${nac}<br>`;
+            if(nac != 'Brasil'){
+                res.innerHTML += `Então você é então é Estrangeiro!`;
+            }else{
+                res.innerHTML += `Então você é então é Brasileiro!`;
+            }    
         }
     </script>
 </body>

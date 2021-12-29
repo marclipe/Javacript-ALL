@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercicio</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Super Contador</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
 </head>
 <body>
     <header>
         <h1>Vamos contar</h1>
     </header>
     <section>
-        <div>
+        <div id="dados">
             <p>
-                Início: <input type="number" name="txtnum" id="txtini">
+                Início: <input type="number" name="inicio" id="txti">
             </p>
             <p>
-                Fim: <input type="number" name="txtnum" id="txtfim">
+                Fim: <input type="number" name="fim" id="txtf">
             </p>
             <p>
-                Passo: <input type="number" name="txtnum" id="txtpasso">
+                Passo: <input type="number" name="passo" id="txtp">
             </p>
             <p>
-                <button type="button" value="Contar" onclick="contar()">Contar</button>
+                <input type="button" value="Contar" onclick="contar()">
             </p>
         </div>
         <div id="res">
@@ -33,6 +33,6 @@
     <footer>
         <p>&copy;CursoemVideo</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

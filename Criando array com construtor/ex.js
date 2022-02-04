@@ -1,4 +1,4 @@
 //Criar Array com construtor 
 
-let myArray = new Array(10)
-console.log(myArray)
+let myArray = new Array(10); 
+console.log(myArray); 

@@ -44,10 +44,37 @@ for (let category of booksByCategory) {
     console.log(category.books.length)
 }
 
+//Contar o número de autores
 function countAuthors() {
-    let authors = []; 
+    let authors = [];
 
-    for(let category of booksByCategory){
-
+    for (let category of booksByCategory) {
+        for (let book of category.books) {
+            if (authors.indexOf(book.author) == -1) {
+                authors.push(book.author)
+            }
+        }
     }
+
+    console.log("Total de autores: ", authors.length)
 }
+
+countAuthors(); 
+
+//Transformar a função acima em uma função que irá receber o nome do autor e devolver os livros desse autor.
+function booksOfAuthor(author) {
+    let books = [];
+
+    for(let category of booksByCategory) {
+        for(let book of category.books) {
+            if(book.author === author) {
+                books.push(book.title)
+            }
+        }
+    }
+    //join("") - para transformar array em String e ter espaço
+    console.log(`Livros do autor ${author}: ${books.join(", ")}`)
+}
+
+booksOfAuthor('Augusto Cury');
+booksOfAuthor('George S. Clason');

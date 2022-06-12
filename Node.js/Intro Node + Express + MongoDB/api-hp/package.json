@@ -4,7 +4,8 @@
   "description": "API para fazer o CRUD de personagens do Harry Potter",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "author": "MarcLipe",
   "license": "ISC",

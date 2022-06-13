@@ -28,7 +28,14 @@ app.get('/', (req, res) => {
 
 //POST - CREATE 
 app.post("/create", (req, res) => {
-  
+  const character = req.body; 
+
+  //Cria o ID
+  character.id = characters.length + 1; 
+  //Joga o ID dentro do Array de character
+  characters.push(character); 
+
+  res.send({message: "Personagem criado com sucesso!"})
 })
 
 app.listen(3000, () => {

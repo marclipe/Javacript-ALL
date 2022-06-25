@@ -1,3 +1,1 @@
-//global.console.log("Hello Wolrd!")
-
-console.log(__dirname)
+global.console.log("Hello Wolrd!")

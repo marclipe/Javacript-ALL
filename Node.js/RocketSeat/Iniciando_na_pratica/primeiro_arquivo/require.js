@@ -1,3 +1,9 @@
-const path = require('path'); 
+/*Cria módulos dentro do Node*/
+//const path = require('path'); 
 
-console.log(path.basename(__filename)); 
+//console.log(path.basename(__filename));
+
+//meus módulos 
+const myModule = require('./exports')
+
+console.log(myModule)
